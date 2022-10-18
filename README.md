@@ -2,7 +2,7 @@
 
 This Challenge is a brilliant React-expert testing challenge by https://www.hackerrank.com/ 
 
-** Solution
+### Solution
 I tried to solve the challenge by using React functional components
 
 ## Tech Skills Used
