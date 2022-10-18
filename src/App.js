@@ -47,35 +47,27 @@ function App() {
     activeIndexChange(np);
   }
 
+  console.log("activeIndex Catelogs Length ===>",activeIndex,catalogs.length-1);
+
+  const startSlideChange = () => {
+    const intervalIdNew = setInterval(()=>{
+      setActiveIndex((stateIndex)=>{
+        return stateIndex == catalogs.length-1 ? 0 : stateIndex+1;
+      })
+    },slideDuration);
+    setIntervalId(intervalIdNew);
+  }
+
   const handleSlideShowToggle = (e) => {
     console.log("handleSlideShowToggle ===>",e.target.checked);
-    if(e.target.checked == true){
-      setStartSlideShow(true);
-      setActiveIndex(activeIndex+1);
-    }else if(e.target.checked == false){
-      console.log("Clear Interval",intervalId);
+    if(e.target.checked==true){
+      startSlideChange(intervalId);
+    }else{
       clearInterval(intervalId);
     }
   }
 
-  useEffect(()=>{
-    console.log(1);
-    if(startSlideShow){
-      console.log(2);
-      const intervalId = setInterval(()=>{
-        //activeIndexChange("n");
-        console.log("In Use Effect Active Index ===>",activeIndex,catalogs.length-1);
-        activeIndex == catalogs.length-1 ? setActiveIndex(0): '';
-        activeIndex < catalogs.length-1 ? setActiveIndex(activeIndex+1) : '';
-      },3000);
-      setIntervalId(intervalId);
-    }else{
-      clearInterval(intervalId);
-    }
-    return ()=>{
-      clearInterval(intervalId);
-    }
-  },[activeIndex]);
+
 
   return (
     <Fragment>

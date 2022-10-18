@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 
 function Thumbs({ items, currentIndex, setActiveIndex }) {
-    //console.log("Props ==>",items, currentIndex);
     const handleThumbClick = (e,idx) => {
         setActiveIndex(idx);
     }
