@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="8" failures="1" errors="0" time="6.597">
+  <testsuite name="Catalog Viewer" errors="0" failures="1" skipped="0" timestamp="2022-10-17T22:14:06" time="4.226" tests="8">
+    <testcase classname="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" name="Catalog Viewer clicking on any catalog thumbnail should show the appropriate image" time="0.155">
+    </testcase>
+    <testcase classname="Catalog Viewer clicking on the previous button should show the previous image" name="Catalog Viewer clicking on the previous button should show the previous image" time="0.047">
+    </testcase>
+    <testcase classname="Catalog Viewer clicking on the next button should show the next image" name="Catalog Viewer clicking on the next button should show the next image" time="0.064">
+    </testcase>
+    <testcase classname="Catalog Viewer clicking on the previous button when on the first item should show the last image" name="Catalog Viewer clicking on the previous button when on the first item should show the last image" time="0.046">
+    </testcase>
+    <testcase classname="Catalog Viewer clicking on the next button when on the last item should show the first image" name="Catalog Viewer clicking on the next button when on the last item should show the first image" time="0.06">
+    </testcase>
+    <testcase classname="Catalog Viewer should change the image every 3 seconds when slide show checked" name="Catalog Viewer should change the image every 3 seconds when slide show checked" time="0.113">
+    </testcase>
+    <testcase classname="Catalog Viewer should have user interaction like before, when slide show checked" name="Catalog Viewer should have user interaction like before, when slide show checked" time="0.258">
+    </testcase>
+    <testcase classname="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" name="Catalog Viewer should stop changing the image every 3 seconds when slide show unchecked" time="0.156">
+      <failure>Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: &quot;pink-light-candle.jpeg&quot;
+Received string:    &quot;http://localhost/green-light-candle.jpeg&quot;
+    at Object.&lt;anonymous&gt; (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/src/App.test.js:120:24)
+    at Promise.then.completed (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (&lt;anonymous&gt;)
+    at callAsyncCircusFn (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (node:internal/process/task_queues:94:5)
+    at _runTest (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest-circus/build/run.js:60:9)
+    at run (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest-runner/build/runTest.js:475:34)
+    at TestRunner.runTests (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest-runner/build/index.js:101:12)
+    at TestScheduler.scheduleTests (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/@jest/core/build/TestScheduler.js:333:13)
+    at runJest (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/@jest/core/build/runJest.js:404:19)
+    at _run10000 (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/@jest/core/build/cli/index.js:320:7)
+    at runCLI (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/@jest/core/build/cli/index.js:173:3)
+    at Object.run (/Users/shamsmislam/Desktop/hcubs/132b1a92-a344-498e-b28e-d1f17e16ca4c/node_modules/jest/node_modules/jest-cli/build/cli/index.js:155:37)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
